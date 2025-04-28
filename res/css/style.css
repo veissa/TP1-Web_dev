@@ -1,0 +1,202 @@
+/* General styles for the entire document */
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  /* The box-sizing CSS property sets how the total width and height of an element are calculated. */
+}
+
+body {
+  line-height: 1.6;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* list-style: none = No marker is shown */
+}
+
+a {
+  color: #34495e;
+  text-decoration: none;
+  /* text-decoration: none - No underlining on anchor elements */
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+section {
+  padding: 10px 15px;
+  margin: 10px;
+  display: block;
+  /* display: block - displays an element as a block element. */
+}
+
+/* Styles for header class */
+.header {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  border: 1px solid #646174;
+  background-color: #a2ccea;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+/* Navigation and logo styles */
+.nav {
+  margin-top: 5px;
+}
+
+.nav a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  color: #34495e;
+  font-size: .99em;
+}
+
+/* Pseudo-class selector for hover effect */
+.nav a:hover {
+  background-color: #7ebeb6;
+  color: #092747;
+}
+
+/* Flexbox styles */
+@media (min-width: 800px) {
+  .header,
+  .nav {
+    display: flex;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Grid styles */
+.grid {
+  margin: 20px auto;
+  width: 100%;
+  border: 1px solid #746161;
+  background-color: #ddd;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px 10px;
+}
+
+.grid p {
+  background-color: rgb(177, 164, 164);
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Positioning styles */
+.static {
+  position: static;
+  background-color: #ad2121;
+  border: 3px solid #ad2121;
+}
+
+.relative {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  background-color: #5721ad;
+  border: 3px solid #5721ad;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  background-color: #ad2188;
+  border: 3px solid #ad2188;
+}
+
+.parentpositioning {
+  background-color: #6921ad;
+  width: 550px;
+  height: 400px;
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 40px;
+  width: 500px;
+  background-color: #ada121;
+  border: 3px solid #ada121;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  color: #ffffff;
+  background-color: #333;
+  padding: 10px;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #f39c12;
+}
+
+/* Additional styling for paragraphs and grades */
+p:hover {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.grade {
+  color: #e74c3c;
+}
+
+/* Table styles */
+th {
+  background-color: #34495e;
+  color: white;
+}
+
+td {
+  background-color: #ecf0f1;
+}
+
+td, th {
+  padding: 8px;
+  text-align: center;
+}
+
+/* Change background color for first table cells */
+td:first-child, th:first-child {
+  background-color: #bdc3c7;
+}
+
+/* First letter of a paragraph */
+p:first-letter {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
